@@ -1,0 +1,54 @@
+# Virtual Environments
+venv/
+env/
+ENV/
+
+# Python Cache & Compiled Files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Datasets & Raw Downloads
+WA_Fn-UseC_-Telco-Customer-Churn.csv
+doc_text.txt
+
+# Data Pipeline Output Directories (keep directory structure via .gitkeep)
+data/raw/*
+!data/raw/.gitkeep
+
+raw_zone/*
+!raw_zone/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+data/analytics/*
+!data/analytics/.gitkeep
+
+data/prediction_logs/*
+!data/prediction_logs/.gitkeep
+
+# Model Store & Database Artifacts
+model_store/*.db
+model_store/*.pkl
+*.sqlite3
+*.sqlite
+*.db
+*.pkl
+*.joblib
+
+# Temporary Test Scripts & Log Files
+run_extraction.py
+test_serving.py
+*.log
+
+# Streamlit User Credentials
+.streamlit/credentials.toml
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
