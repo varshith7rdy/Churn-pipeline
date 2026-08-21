@@ -17,6 +17,16 @@ feature_cols = list(prototype.drop(columns=['churn_flag']).columns)
 class CustomerFeatures(BaseModel):
     features: dict
 
+@app.get("/")
+def root():
+    return {
+        "status": "online",
+        "service": "Telecom Churn Scoring API",
+        "predict_endpoint": "POST /predict",
+        "docs": "http://127.0.0.1:8000/docs",
+        "streamlit_ui": "http://127.0.0.1:8501"
+    }
+
 @app.post("/predict")
 def predict(data: CustomerFeatures):
     x = np.array([data.features.get(col, 0) for col in feature_cols]).reshape(1, -1)

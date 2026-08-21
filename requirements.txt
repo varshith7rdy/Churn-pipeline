@@ -1,0 +1,18 @@
+# Core Data Processing & Analytics
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+joblib>=1.3.0
+
+# Web Framework & Model Serving API
+fastapi>=0.100.0
+uvicorn>=0.22.0
+python-multipart>=0.0.6
+requests>=2.31.0
+
+# Interactive Frontend UI
+streamlit>=1.25.0
